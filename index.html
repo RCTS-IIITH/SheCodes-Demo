@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Event Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .event-info {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .organizer {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .organizer-name {
+            font-weight: bold;
+        }
+
+        .organizer-role {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="event-title" id="title">Loading...</div>
+        <div class="event-info" id="date"></div>
+        <div class="event-info" id="location"></div>
+        <div class="event-info" id="description"></div>
+
+        <div class="organizer">
+            <div class="organizer-name" id="organizerName"></div>
+            <div class="organizer-role" id="organizerRole"></div>
+            <div class="event-info" id="organizerEmail"></div>
+        </div>
+    </div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const event = data.event;
+
+                document.getElementById('title').textContent = event.title;
+                document.getElementById('date').textContent = "📅 " + event.date;
+                document.getElementById('location').textContent = "📍 " + event.location;
+                document.getElementById('description').textContent = event.description;
+
+                document.getElementById('organizerName').textContent = event.organizer.name;
+                document.getElementById('organizerRole').textContent = event.organizer.role;
+                document.getElementById('organizerEmail').textContent = event.organizer.email;
+            })
+            .catch(error => {
+                console.error('Error loading JSON:', error);
+            });
+    </script>
+
+</body>
+</html>
