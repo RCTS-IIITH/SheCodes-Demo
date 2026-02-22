@@ -3,12 +3,19 @@
     "title": "SheCodes Workshop - 1",
     "date": "Feb 21st and 22nd, 2026",
     "location": "IIIT-Hyderabad, India",
-    "description": "A Workshop to kickstart the journey of OpenSOurce Contributions. Exclusively for Women",
-    "organizer": {
-      "name": "NEELIMA VASANASETTI",
-      "role": "Student Research Translation Engineer",
-      "email": "neelimavasanasetti@gmail.com",
-      "Qualification": "B.Tech in Computer Science"
-    }
+    "description": "A Workshop to kickstart the journey of OpenSource Contributions. Exclusively for Women",
+    "organizer": [
+      {
+        "name": "Ajitha Sindhe",
+        "role": "Program Coordinator - C4GT",
+        "email": "ajitha.sindhe@research.iiit.ac.in"
+      },
+      {
+        "name": "Neelima Vasanasetti",
+        "role": "Student Research Translation Engineer",
+        "email": "neelimavasanasetti@gmail.com",
+        "qualification": "B.Tech in Computer Science"
+      }
+    ]
   }
 }
