@@ -1,13 +1,13 @@
 {
   "event": {
-    "title": "SheCodes Workshop - 1",
-    "date": "Feb 21st and 22nd, 2026",
+    "title": "Qualcomm Workshop",
+    "date": "March 28th and 29th, 2026",
     "location": "IIIT-Hyderabad, India",
-    "description": "A Workshop to kickstart the journey of OpenSOurce Contributions. Exclusively for Women",
+    "description": "A Workshop to kickstart the journey of OpenSOurce Contributions.",
     "organizer": {
-      "name": "Ajitha Sindhe",
-      "role": "Program Coordinator - C4GT",
-      "email": "ajitha.sindhe@research.iiit.ac.in"
+      "name": "Durga Bhavani Gunnam",
+      "role": "Coordinator - C4GT",
+      "email": "bhavani.gunnam@research.iiit.ac.in"
     }
   }
 }
